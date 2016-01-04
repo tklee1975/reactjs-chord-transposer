@@ -93,14 +93,14 @@ var ChordTable = React.createClass({
       var songChord1 = chord;
       var songChord2 = chord+1;
 
-      console.debug("chord=" + chord + " songChord1=" + songChord1);
+      //console.debug("chord=" + chord + " songChord1=" + songChord1);
 
       var playChord1 = modifyChord(songChord1 + chordDiff);
       var playChord2 = modifyChord(songChord2 + chordDiff);
 
 
 
-      console.debug("playChord1=" + playChord1 + " playChord2=" + playChord2);
+      //console.debug("playChord1=" + playChord1 + " playChord2=" + playChord2);
       var songChordStr1 = chordToStr(modifyChord(songChord1));
       var songChordStr2 = chordToStr(modifyChord(songChord2));
       var playChordStr1 = chordToStr(playChord1);
@@ -198,7 +198,7 @@ var ChordControl = React.createClass({
   },
 
   onPlayChordChange: function() {
-    console.log("Capo: " + this.refs.capo.getSelectedValue());
+    //console.log("Capo: " + this.refs.capo.getSelectedValue());
 
     var songChord = this.refs.songChord.getSelectedValue();
     var playChord = this.refs.playChord.getSelectedValue();
